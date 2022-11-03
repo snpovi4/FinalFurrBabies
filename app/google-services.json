@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "762999474945",
+    "firebase_url": "https://final-furrbabies-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "final-furrbabies",
+    "storage_bucket": "final-furrbabies.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762999474945:android:b27d24480bbc1eca9e2900",
+        "android_client_info": {
+          "package_name": "com.example.finalfurrbabies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "762999474945-ebm288o472mp8olbkn3fls7e6cm39ae4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFVMg3hKBLjDkJrjX2fx1h8gpXrhmypvY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "762999474945-ebm288o472mp8olbkn3fls7e6cm39ae4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
