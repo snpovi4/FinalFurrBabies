@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F3ACED"
     tools:context=".Fragment.ProfileFragment">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -16,28 +17,28 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?android:attr/windowBackground">
+            android:background="@color/purple_200">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:id="@+id/username"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp"
                     android:maxLines="1"
                     android:textColor="@color/colorPrimaryDark"
-                    android:textStyle="bold"
-                    android:id="@+id/username"/>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <ImageView
+                    android:id="@+id/options"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/options"
-                    android:src="@drawable/ic_baseline_logout_24"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="10dp"/>
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_baseline_logout_24" />
 
             </RelativeLayout>
 
@@ -57,19 +58,21 @@
             <LinearLayout
                 android:id="@+id/top_bar"
                 android:layout_width="match_parent"
-                android:layout_height="192dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="16dp">
+
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/image_profile"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:layout_marginTop="18dp"/>
+                    android:layout_marginTop="18dp" />
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="173dp"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:paddingLeft="20dp"
                     android:paddingRight="4dp">
@@ -152,12 +155,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:background="@drawable/button_black" />
+                        android:background="@drawable/button_black"
+                        android:textColor="@color/white" />
 
                     <LinearLayout
                         android:id="@+id/second_bar"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_below="@id/mid_bar"
                         android:layout_marginLeft="-5dp"
                         android:layout_marginTop="10dp"
@@ -169,7 +173,7 @@
                             android:id="@+id/call"
                             style="?android:attr/buttonBarButtonStyle"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="38dp"
                             android:layout_weight="1"
                             android:src="@drawable/ic_baseline_call_24" />
 
@@ -177,7 +181,7 @@
                             android:id="@+id/Message"
                             style="?android:attr/buttonBarButtonStyle"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="38dp"
                             android:layout_weight="1"
                             android:src="@drawable/ic_baseline_message_24" />
 
@@ -190,7 +194,7 @@
             <LinearLayout
                 android:id="@+id/mid_bar"
                 android:layout_width="match_parent"
-                android:layout_height="113dp"
+                android:layout_height="69dp"
                 android:layout_below="@id/top_bar"
                 android:orientation="vertical"
                 android:padding="12dp">

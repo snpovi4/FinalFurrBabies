@@ -237,6 +237,7 @@ public class ProfileFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 recyclerView.setVisibility(View.VISIBLE);
+                saved_fotos.setImageResource(R.drawable.ic_baseline_bookmark_border_24);
                 recyclerView_saves.setVisibility(View.GONE);
             }
         });
@@ -245,7 +246,9 @@ public class ProfileFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 recyclerView.setVisibility(View.GONE);
+                saved_fotos.setImageResource(R.drawable.ic_baseline_bookmark_24);
                 recyclerView_saves.setVisibility(View.VISIBLE);
+
             }
         });
 

@@ -99,7 +99,7 @@ public class RegisterActivity extends AppCompatActivity {
                             map.put("username", username.toLowerCase());
                             map.put("fullname", fullname);
                             map.put("imageurl", "https://firebasestorage.googleapis.com/v0/b/final-furrbabies.appspot.com/o/placeholder.png?alt=media&token=0e8aa291-aa66-4b40-8efc-63998d2de051");
-                            map.put("bio", bio.toLowerCase());
+                            map.put("bio", bio);
                             map.put("contact",contact);
 
                             reference.setValue(map).addOnCompleteListener(new OnCompleteListener<Void>() {

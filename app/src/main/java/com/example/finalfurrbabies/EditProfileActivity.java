@@ -124,7 +124,7 @@ public class EditProfileActivity extends AppCompatActivity {
         HashMap<String, Object> map = new HashMap<>();
         map.put("fullname", fullname);
         map.put("username", username);
-        map.put("bio", bio.toLowerCase());
+        map.put("bio", bio);
 
         reference.updateChildren(map);
 

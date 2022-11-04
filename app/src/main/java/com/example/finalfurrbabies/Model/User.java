@@ -1,7 +1,5 @@
 package com.example.finalfurrbabies.Model;
 
-import android.widget.ImageView;
-
 public class User {
     private String id;
     private String username;
@@ -68,5 +66,4 @@ public class User {
     public void setContact(String contact) {
         this.contact = contact;
     }
-
 }

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#F3ACED"
     tools:context=".PostActivity">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -17,32 +18,33 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?android:attr/windowBackground">
+            android:background="@color/purple_200">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/close"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_close_24"
-                    android:id="@+id/close"
+                    android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true" />
+                    android:src="@drawable/ic_baseline_close_24" />
 
                 <TextView
+                    android:id="@+id/post"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:text="POST"
-                    android:id="@+id/post"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:layout_centerVertical="true"
-                    android:textColor="@color/colorPrimary"
+                    android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true" />
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="#673AB7"
+                    android:text="POST"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
 
             </RelativeLayout>
 
@@ -75,6 +77,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
+            android:background="@color/purple_200"
             android:hint="Description"
             android:maxLines="5"
             android:minHeight="48dp" />

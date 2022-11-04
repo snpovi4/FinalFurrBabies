@@ -3,11 +3,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="#F3ACED"
     android:layout_margin="8dp">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:background="#F3ACED"
         android:id="@+id/image_profile"/>
 
     <LinearLayout
@@ -15,6 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:orientation="vertical"
+        android:background="#F3ACED"
         android:layout_toEndOf="@id/image_profile">
 
         <TextView

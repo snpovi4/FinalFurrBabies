@@ -7,47 +7,52 @@
     android:orientation="vertical"
     android:padding="10dp"
     android:gravity="center"
+    android:background="#F3ACED"
     tools:context=".RegisterActivity">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:src="@drawable/logo"/>
+    <TextView
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/arbutus_slab"
+        android:gravity="center"
+        android:text="FurrBabies"
+        android:textSize="30dp" />
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/edittext_background"
-        android:hint="Username"
         android:id="@+id/username"
-        android:layout_marginTop="15dp"
-        android:padding="10dp"/>
-
-    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/edittext_background"
-        android:hint="Full name"
+        android:layout_marginTop="15dp"
+        android:background="@color/purple_200"
+        android:hint="Username"
+        android:padding="10dp" />
+
+    <EditText
         android:id="@+id/fullname"
-        android:layout_marginTop="15dp"
-        android:padding="10dp"/>
-
-    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/edittext_background"
-        android:hint="Email"
-        android:id="@+id/email"
-        android:inputType="textEmailAddress"
         android:layout_marginTop="15dp"
-        android:padding="10dp"/>
+        android:background="@color/purple_200"
+        android:hint="Full name"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/purple_200"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp" />
 
     <EditText
         android:id="@+id/contact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:background="@drawable/edittext_background"
+        android:background="@color/purple_200"
         android:hint="Contact No (for pet sitters)"
         android:inputType="phone"
         android:padding="10dp" />
@@ -59,32 +64,32 @@
         android:text="*Optional for regular Users*" />
 
     <EditText
+        android:id="@+id/bio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/edittext_background"
-        android:hint="Location"
-        android:id="@+id/bio"
         android:layout_marginTop="15dp"
-        android:padding="10dp"/>
+        android:background="@color/purple_200"
+        android:hint="Location"
+        android:padding="10dp" />
 
     <EditText
+        android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/edittext_background"
-        android:hint="Password"
-        android:id="@+id/password"
-        android:inputType="textPassword"
         android:layout_marginTop="15dp"
-        android:padding="10dp"/>
+        android:background="@color/purple_200"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp" />
 
     <Button
-        android:id="@+id/register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:background="@drawable/button_background"
         android:text="Register"
-        android:textColor="@color/white" />
+        android:id="@+id/register"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"/>
 
     <TextView
         android:layout_width="wrap_content"

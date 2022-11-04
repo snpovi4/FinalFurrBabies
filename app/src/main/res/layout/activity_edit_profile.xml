@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
+    android:background="#F3ACED"
     tools:context=".EditProfileActivity">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -17,43 +18,44 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?android:attr/windowBackground">
+            android:background="@color/purple_200">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/close"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_close_24"
-                    android:id="@+id/close"
-                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true" />
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_baseline_close_24" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Edit Profile"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="10dp"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
+                    android:layout_toEndOf="@id/close"
+                    android:text="Edit Profile"
                     android:textColor="@color/colorPrimaryDark"
-                    android:layout_toEndOf="@id/close"/>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/save"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
                     android:text="SAVE"
-                    android:id="@+id/save"
-                    android:textSize="16sp"
-                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
                     android:textColor="@color/colorPrimary"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true" />
+                    android:textSize="16sp" />
 
             </RelativeLayout>
 
@@ -81,28 +83,32 @@
             android:text="Change Photo"
             android:layout_gravity="center"
             android:id="@+id/tv_change"
+            android:textStyle="bold"
             android:textColor="@color/colorPrimary"
             android:textSize="16sp"/>
 
         <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/fullname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:background="@color/purple_200"
             android:hint="Full Name"
-            android:id="@+id/fullname"
-            app:met_floatingLabel="normal"/>
+            app:met_floatingLabel="normal" />
 
         <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/purple_200"
             android:hint="Username"
-            android:id="@+id/username"
-            app:met_floatingLabel="normal"/>
+            app:met_floatingLabel="normal" />
 
         <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/bio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/purple_200"
             android:hint="Location"
             app:met_floatingLabel="normal" />
 

@@ -7,41 +7,46 @@
     android:orientation="vertical"
     android:padding="10dp"
     android:gravity="center"
+    android:background="#F3ACED"
     tools:context=".LoginActivity">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:src="@drawable/logo"/>
+    <TextView
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/arbutus_slab"
+        android:gravity="center"
+        android:text="FurrBabies"
+        android:textSize="30dp" />
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/edittext_background"
-        android:hint="Email"
         android:id="@+id/email"
-        android:inputType="textEmailAddress"
-        android:layout_marginTop="15dp"
-        android:padding="10dp"/>
-
-    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/edittext_background"
-        android:hint="Password"
-        android:id="@+id/password"
-        android:inputType="textPassword"
         android:layout_marginTop="15dp"
-        android:padding="10dp"/>
+        android:background="@color/purple_200"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/purple_200"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp" />
 
     <Button
-        android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:background="@drawable/button_background"
         android:text="Log in"
-        android:textColor="@color/white" />
+        android:id="@+id/login"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"/>
 
     <TextView
         android:layout_width="wrap_content"
